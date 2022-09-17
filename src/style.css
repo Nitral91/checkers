@@ -47,3 +47,16 @@ body {
 .checker.white {
     background-color: white;
 }
+
+/*.noti*/
+.message-text._success {
+    color: green;
+}
+
+.message-text._warning {
+    color: brown;
+}
+
+.message-text._info {
+    color: rebeccapurple;
+}
