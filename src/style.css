@@ -2,6 +2,52 @@ body {
     min-height: 100vh;
 }
 
+.board {
+    display: inline-flex;
+    flex-direction: column;
+
+    border: 2px solid black;
+}
+
+.row {
+    display: flex;
+}
+
+.cell {
+    display: inline-block;
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.cell.white {
+    background-color: bisque;
+}
+
+.cell.black {
+    background-color: saddlebrown;
+}
+
+.checker {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.checker.black {
+    background-color: black;
+}
+
+.checker.white {
+    background-color: white;
+}
+
 /*.noti*/
 .message-text._success {
     color: green;

@@ -1,7 +1,7 @@
 import "./style.css";
 import {NotificationsQueueController} from "./app/modules/notifications/components/notifications-queue/notifications-queue.controller";
 import {NotificationMessageType} from "./app/modules/notifications/model";
-
+import {App} from "./app/app";
 
 // TODO: notifications demo
 function randomIntFromInterval(min: number, max: number) { // min and max included
@@ -38,3 +38,5 @@ setInterval(() => {
 
     notifications.showMessage(message);
 }, 4000);
+
+new App();
